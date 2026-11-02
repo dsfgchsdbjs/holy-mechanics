@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Holy Mechanics – Fahrzeugaufbereitung</title>
+<meta name="description" content="Holy Mechanics: Fahrzeugaufbereitung mit Liebe zum Detail. Innen, außen, Politur und Versiegelung.">
+<meta name="theme-color" content="#000000"><link rel="icon" href="icon.png">
+<style>
+:root{--m:#74e6cf;--bg:#000;--card:#0e1413;--bd:#1f3a35;--tx:#f2f7f6;--mu:#a9bcb8;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,"Segoe UI",Roboto,sans-serif;padding:env(safe-area-inset-top,0) env(safe-area-inset-right,0) env(safe-area-inset-bottom,0) env(safe-area-inset-left,0)}
+.w{max-width:960px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-style:italic;font-weight:800;text-transform:uppercase;letter-spacing:.02em;margin:0}
+.hero{text-align:center;padding:36px 0 44px;background:radial-gradient(ellipse at 50% 0,rgba(116,230,207,.18),transparent 65%)}
+.hero img{width:min(78%,420px);height:auto}
+.hero h1{font-size:clamp(22px,6vw,34px);margin:18px 0 6px;color:var(--m)}
+.hero p{margin:0 auto 22px;color:var(--mu);max-width:34ch}
+.btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.b{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:6px;border:2px solid var(--m);background:var(--m);color:#00110d;font-weight:800;text-decoration:none;text-transform:uppercase;letter-spacing:.04em;font-style:italic}
+.b.g{background:transparent;color:var(--m)}
+.b:focus-visible,a:focus-visible{outline:3px solid #fff;outline-offset:3px}
+section{padding:40px 0}
+h2{font-size:clamp(22px,5.5vw,30px);color:var(--m);margin-bottom:6px}
+.sub{color:var(--mu);margin:0 0 22px}
+.grid{display:grid;gap:12px}
+@media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+.c{background:var(--card);border:1px solid var(--bd);border-left:4px solid var(--m);border-radius:6px;padding:16px}
+.c h3{font-size:18px;margin-bottom:6px}.c p{margin:0 0 10px;color:var(--mu)}
+.p{color:var(--m);font-weight:700}
+#ct a.b{margin:0}
+footer{border-top:1px solid var(--bd);padding:22px 0 30px;color:var(--mu);font-size:14px;text-align:center}
+footer a{color:var(--m)}
+</style></head><body>
+<header class="hero"><div class="w">
+<img src="logo.png" alt="Holy Mechanics Logo" width="900" height="650">
+<h1>Fahrzeugaufbereitung</h1>
+<p>Innen. Außen. Glanz. Mit Liebe zum Detail.</p>
+<div class="btns"><a class="b" href="#kontakt">Anfragen</a><a class="b g" href="https://www.instagram.com/holy.mechanics" rel="noopener">Instagram</a></div>
+</div></header>
+<main>
+<section id="leistungen"><div class="w"><h2>Leistungen &amp; Preise</h2><p class="sub">Der genaue Preis hängt von Fahrzeug und Zustand ab. Schreib uns einfach.</p>
+<div class="grid">
+<div class="c"><h3>Handwäsche</h3><p>Schonende Außenwäsche von Hand, inklusive Felgen und Türkanten.</p><span class="p">Preis auf Anfrage</span></div>
+<div class="c"><h3>Innenraum</h3><p>Saugen, Kunststoffe und Polster pflegen, Scheiben innen sauber.</p><span class="p">Preis auf Anfrage</span></div>
+<div class="c"><h3>Politur</h3><p>Kratzer und Hologramme reduzieren, Lackglanz zurückholen.</p><span class="p">Preis auf Anfrage</span></div>
+<div class="c"><h3>Versiegelung</h3><p>Schutz für den Lack, damit Wasser abperlt und Pflege leichter wird.</p><span class="p">Preis auf Anfrage</span></div>
+<div class="c"><h3>Felgen &amp; Reifen</h3><p>Gründliche Reinigung, Flugrost entfernen, Reifen pflegen.</p><span class="p">Preis auf Anfrage</span></div>
+<div class="c"><h3>Komplettpaket</h3><p>Innen und außen in einem Termin, rundum aufbereitet.</p><span class="p">Preis auf Anfrage</span></div>
+</div></div></section>
+<section id="kontakt"><div class="w"><h2>Kontakt</h2><p class="sub" id="city">Schreib uns für einen Termin oder ein Angebot.</p>
+<div class="btns" id="ct" style="justify-content:flex-start">
+<a class="b" href="https://www.instagram.com/holy.mechanics" rel="noopener">Instagram</a>
+<a class="b g" href="https://www.tiktok.com/@shahino98" rel="noopener">TikTok</a>
+</div></div></section>
+</main>
+<footer><div class="w">© Holy Mechanics · <a href="impressum.html">Impressum</a></div></footer>
+<script>
+/* Hier eintragen. Leere Felder werden nicht angezeigt. */
+var C={phone:"",whatsapp:"",email:"",city:""};
+var ct=document.getElementById("ct");
+function add(t,h,g){var a=document.createElement("a");a.className="b"+(g?" g":"");a.textContent=t;a.href=h;ct.insertBefore(a,ct.firstChild)}
+if(C.email)add("E-Mail","mailto:"+C.email,1);
+if(C.phone)add("Anrufen","tel:"+C.phone.replace(/[^+\d]/g,""),1);
+if(C.whatsapp)add("WhatsApp","https://wa.me/"+C.whatsapp.replace(/\D/g,""));
+if(C.city)document.getElementById("city").textContent=C.city+". Schreib uns für einen Termin oder ein Angebot.";
+</script></body></html>
